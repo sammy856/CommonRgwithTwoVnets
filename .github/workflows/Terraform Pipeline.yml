@@ -10,11 +10,13 @@ jobs:
     name: first job
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout/copy files init agent
         uses: actions/checkout@v7.0.0
 
-      - name: list files
-        run: ls -a
+      - name: HashiCorp - Setup Terraform/install
+        uses: hashicorp/setup-terraform@v2.0.3
+       
+        
       
         
     
