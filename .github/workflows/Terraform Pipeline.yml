@@ -1,1 +1,22 @@
 name: tearrform deployment 
+
+on: 
+  push: 
+    branches:
+      - main
+
+jobs:
+  my_first_job:
+    name: first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.0
+
+      - name: list files
+        run: ls -a
+      
+        
+    
+  
+  
