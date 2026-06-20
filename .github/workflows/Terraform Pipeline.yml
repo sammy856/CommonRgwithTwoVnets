@@ -30,7 +30,8 @@ jobs:
         working-directory: ./parent module
         run: terraform plan
 
-
+      - name: Terraform Apply
+        run: terraform apply
       
       
         
