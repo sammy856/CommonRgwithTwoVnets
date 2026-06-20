@@ -1,6 +1,6 @@
 parent_rg_details = {
   rg1 = {
-    rgname   = "common-rg"
+    rgname   = "mera-rg"
     location = "East US"
   }
 }
