@@ -20,5 +20,12 @@ parent_vnet_details = {
     location      = "East US"
     rgname        = "mera-rg"
   }
+
+    vnet3 = {
+    vnetname      = "vnet3"
+    address_space = ["10.2.0.0/16"]
+    location      = "East US"
+    rgname        = "mera-rg"
+  }
 }
 
