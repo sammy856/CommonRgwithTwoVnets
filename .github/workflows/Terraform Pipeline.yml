@@ -1,9 +1,9 @@
 name: tearrform deployment 
 
-on: 
-  push: 
-    branches:
-      - main
+on: workflow_dispatch
+  # push: 
+  #   branches:
+  #     - main
 
 jobs:
   my_first_job:
@@ -15,6 +15,12 @@ jobs:
 
       - name: HashiCorp - Setup Terraform/install
         uses: hashicorp/setup-terraform@v2.0.3
+
+      - name: Azure Login
+        uses: Azure/login@v3
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        
        
       - name: Terraform Init
         working-directory: ./parent module
