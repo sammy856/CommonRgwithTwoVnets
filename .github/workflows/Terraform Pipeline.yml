@@ -17,7 +17,7 @@ jobs:
         uses: hashicorp/setup-terraform@v2.0.3
        
       - name: Terraform Init
-        run: tearrform init
+        run: terraform init
 
       
       
