@@ -17,6 +17,7 @@ jobs:
         uses: hashicorp/setup-terraform@v2.0.3
        
       - name: Terraform Init
+        working-directory: ./parent module
         run: terraform init
 
       
