@@ -11,14 +11,14 @@ parent_vnet_details = {
     vnetname      = "vnet1"
     address_space = ["10.0.0.0/16"]
     location      = "East US"
-    rgname        = "common-rg"
+    rgname        = "mera-rg"
   }
 
     vnet2 = {
     vnetname      = "vnet2"
     address_space = ["10.1.0.0/16"]
     location      = "East US"
-    rgname        = "common-rg"
+    rgname        = "mera-rg"
   }
 }
 
